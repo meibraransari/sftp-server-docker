@@ -1,6 +1,6 @@
 ---
 Created: 2024-07-27T14:01:27+05:30
-Updated: 2024-07-30T10:59:47+05:30
+Updated: 2024-07-30T11:01:18+05:30
 Maintainer: Ibrar Ansari
 ---
 <h1 align="center">
@@ -58,7 +58,7 @@ ssh -i ~/.ssh/ansible_id_rsa_key -p $ssh_port $ssh_user@$hostname
 ssh -p $ssh_port $ssh_user@$hostname
 ```
 
-## Step 6: Test SFTP connection 
+## Step 6: Test SFTP Connection 
 ### Test SFTP connection with password method:
 ```
 sftp <SFTP_USER>@<HOST_IP> -P <PORT>
@@ -67,7 +67,7 @@ sftp <SFTP_USER>@<HOST_IP> -P <PORT>
 ```
 sftp -P <PORT> -i <PRIVATE_KEY_PATH> <SFTP_USER>@<HOST_IP> 
 ```
-### If the -i option is not available, you can use the -o option with a syntax like::
+###  # If the -i option is not available, you can use the -o option with a syntax like::
 ```
 sftp -P <PORT> -oIdentityFile=<PRIVATE_KEY_PATH> <SFTP_USER>@<HOST_IP> 
 ```
