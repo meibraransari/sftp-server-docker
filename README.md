@@ -1,13 +1,8 @@
 ---
 Created: 2024-07-27T14:01:27+05:30
-Updated: 2024-07-30T10:58:21+05:30
+Updated: 2024-07-30T10:59:47+05:30
 Maintainer: Ibrar Ansari
 ---
-<p align="center">
-  <a href="https://hub.docker.com/r/ibraransaridocker/ubuntu-ssh-enabled">
-    <img alt="Ubuntu SSH Enabled" src="ubuntu.png" width="450" />
-  </a>
-</p>
 <h1 align="center">
   📢📢📢 Attention all Docker 🐳 Beginners & Professionals! 🎯
 </h1>
