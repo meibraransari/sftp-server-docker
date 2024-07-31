@@ -1,6 +1,6 @@
 ---
 Created: 2024-07-27T14:01:27+05:30
-Updated: 2024-07-30T11:01:18+05:30
+Updated: 2024-07-31T09:23:48+05:30
 Maintainer: Ibrar Ansari
 ---
 <h1 align="center">
@@ -8,8 +8,8 @@ Maintainer: Ibrar Ansari
 </h1>
 
 <p align="left">  
-    <a href="https://hub.docker.com/r/ibraransaridocker/ubuntu-ssh-enabled">
-        <img alt="Docker Pulls Kubernetes Goat" src="https://img.shields.io/docker/pulls/ibraransaridocker/ubuntu-ssh-enabled" />
+    <a href="https://hub.docker.com/r/ibraransaridocker/sftp-server-docker">
+        <img alt="Docker Pulls Kubernetes Goat" src="https://img.shields.io/docker/pulls/ibraransaridocker/sftp-server-docker" />
     </a>    
 </p>
 
@@ -26,7 +26,7 @@ ls -alsh ~/.ssh/
 ```
 ## Step 2: Pull docker image
 ```
-docker pull ibraransaridocker/ubuntu-ssh-enabled:latest
+docker pull ibraransaridocker/sftp-server-docker:latest
 ```
 ## Step 3: Set variables to run the docker container.
 ### Change 👇 variables(containername, username, password & port) according to your need.
@@ -35,7 +35,7 @@ container_name=sftp_server_1
 sftp_user=ibrar_ansari
 sftp_pass=your_secure_password
 sftp_port=2023
-container_image=ibraransaridocker/ubuntu-ssh-enabled:latest
+container_image=ibraransaridocker/sftp-server-docker:latest
 key_path=~/.ssh/sftp_id_rsa_key.pub
 sftp_path=/iansari
 ```
@@ -51,7 +51,7 @@ hostname=$(hostname -I | awk '{print $1}')
 
 ### Pem Key Method:
 ```
-ssh -i ~/.ssh/ansible_id_rsa_key -p $ssh_port $ssh_user@$hostname
+ssh -i ~/.ssh/sftp_id_rsa_key -p $ssh_port $ssh_user@$hostname
 ```
 ### Password Method:
 ```
