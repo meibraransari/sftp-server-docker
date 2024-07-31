@@ -1,6 +1,6 @@
 ---
 Created: 2024-07-27T14:01:27+05:30
-Updated: 2024-07-31T09:23:48+05:30
+Updated: 2024-07-31T09:29:24+05:30
 Maintainer: Ibrar Ansari
 ---
 <h1 align="center">
@@ -9,7 +9,7 @@ Maintainer: Ibrar Ansari
 
 <p align="left">  
     <a href="https://hub.docker.com/r/ibraransaridocker/sftp-server-docker">
-        <img alt="Docker Pulls Kubernetes Goat" src="https://img.shields.io/docker/pulls/ibraransaridocker/sftp-server-docker" />
+        <img alt="SFTP Server Docker" src="https://img.shields.io/docker/pulls/ibraransaridocker/sftp-server-docker" />
     </a>    
 </p>
 
