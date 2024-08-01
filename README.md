@@ -1,6 +1,6 @@
 ---
 Created: 2024-07-27T14:01:27+05:30
-Updated: 2024-07-31T09:29:24+05:30
+Updated: 2024-08-01T10:11:05+05:30
 Maintainer: Ibrar Ansari
 ---
 <h1 align="center">
@@ -37,12 +37,14 @@ sftp_pass=your_secure_password
 sftp_port=2023
 container_image=ibraransaridocker/sftp-server-docker:latest
 key_path=~/.ssh/sftp_id_rsa_key.pub
-sftp_path=/iansari
+mount_path=/ansari
 ```
 ## Step 4: Run docker container.
 ```
-docker run -itd --name=$container_name -p $sftp_port:22 -e SSH_USERNAME=$sftp_user -e PASSWORD=$sftp_pass -e AUTHORIZED_KEYS="$(cat $key_path)" -v $sftp_path:/home/$ssh_user $container_image
+docker run -itd --name=$container_name -p $sftp_port:22 -e SSH_USERNAME=$sftp_user -e PASSWORD=$sftp_pass -e AUTHORIZED_KEYS="$(cat $key_path)" -v $mount_path:/home/$ssh_user/$mount_path $container_image
 ```
+> Note:- Mounted path will be available under /home/{your_user}/mount_path.
+
 ## Step 5: Test SSH connection 
 ### Get Node IP:
 ```
