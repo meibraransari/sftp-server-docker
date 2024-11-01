@@ -1,6 +1,6 @@
 ---
 Created: 2024-07-27T14:01:27+05:30
-Updated: 2024-11-01T23:04:43+05:30
+Updated: 2024-11-01T23:05:28+05:30
 Maintainer: Ibrar Ansari
 ---
 <h1 align="center">
@@ -94,6 +94,8 @@ Host: sftp://<Your_Host_IP>
 Username: Value of sftp_user variable.
 Password: Value of sftp_pass variable. 
 Port: Value of sftp_port variable. 
+
+Note:- Mounted path will be available under /home/{your_user}/mount_path.
 ```
 
 ### 💼 Connect with me 👇👇 😊
