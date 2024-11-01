@@ -1,6 +1,6 @@
 ---
 Created: 2024-07-27T14:01:27+05:30
-Updated: 2024-08-01T10:11:05+05:30
+Updated: 2024-11-01T22:55:05+05:30
 Maintainer: Ibrar Ansari
 ---
 <h1 align="center">
@@ -53,11 +53,11 @@ hostname=$(hostname -I | awk '{print $1}')
 
 ### Pem Key Method:
 ```
-ssh -i ~/.ssh/sftp_id_rsa_key -p $ssh_port $ssh_user@$hostname
+ssh -i ~/.ssh/sftp_id_rsa_key -p $sftp_port $sftp_user@$hostname
 ```
 ### Password Method:
 ```
-ssh -p $ssh_port $ssh_user@$hostname
+ssh -p $sftp_port $sftp_user@$hostname
 ```
 
 ## Step 6: Test SFTP Connection 
