@@ -1,6 +1,6 @@
 ---
 Created: 2024-07-27T14:01:27+05:30
-Updated: 2024-11-01T22:55:05+05:30
+Updated: 2024-11-01T23:04:43+05:30
 Maintainer: Ibrar Ansari
 ---
 <h1 align="center">
@@ -86,6 +86,14 @@ Host work
 
 # Connect it
 sftp -F <PRIVATE_KEY_PATH> <HOST_IP>
+```
+
+### Using FileZilla
+```
+Host: sftp://<Your_Host_IP>
+Username: Value of sftp_user variable.
+Password: Value of sftp_pass variable. 
+Port: Value of sftp_port variable. 
 ```
 
 ### 💼 Connect with me 👇👇 😊
